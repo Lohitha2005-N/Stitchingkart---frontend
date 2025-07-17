@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StitchKart - Book Your Tailor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>StitchKart</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#categories">Categories</a>
+      <a href="#book">Book Now</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Your Personal Tailoring Partner</h2>
+    <p>Book Online/Offline Measurements & Design Your Outfit</p>
+    <button onclick="document.getElementById('book').scrollIntoView()">Book a Tailor</button>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Online Measurements</h3>
+        <p>Book virtual measurement sessions with our tailors</p>
+      </div>
+      <div class="card">
+        <h3>Offline Measurements</h3>
+        <p>Get your measurements taken at your doorstep</p>
+      </div>
+      <div class="card">
+        <h3>Stitching & Design</h3>
+        <p>Perfect fit & custom designs delivered to you</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories">
+    <h2>Categories</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Men's Wear</h3>
+        <p>Shirts, Trousers, Suits, Ethnic Wear</p>
+      </div>
+      <div class="card">
+        <h3>Women's Wear</h3>
+        <p>Blouses, Lehengas, Gowns, Dresses</p>
+      </div>
+      <div class="card">
+        <h3>Customize Your Outfit</h3>
+        <p>Create your unique design with our experts</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book">
+    <h2>Book a Tailor</h2>
+    <form id="booking-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option value="Men's Wear">Men's Wear</option>
+        <option value="Women's Wear">Women's Wear</option>
+        <option value="Customize Outfit">Customize Your Outfit</option>
+      </select>
+      <select id="service" required>
+        <option value="">Select Service</option>
+        <option value="Online Measurement">Online Measurement</option>
+        <option value="Offline Measurement">Offline Measurement</option>
+        <option value="Stitching">Stitching</option>
+      </select>
+      <input type="date" id="date" required>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" id="cname" placeholder="Your Name" required>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <textarea id="cmessage" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <a href="https://wa.me/919876543210" target="_blank" id="whatsapp-btn">Chat on WhatsApp</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
